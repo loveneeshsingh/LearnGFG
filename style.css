@@ -3,22 +3,64 @@
     padding: 0;
     box-sizing: border-box;
 }
-html,body{
-    height: 100%;
-    width: 100%;
+
+body {
+    font-family: Arial, sans-serif;
     background : url('wave-haikei.png') no-repeat;
     background-size: cover;
-}
-
-h1{
-    text-align: center;
-    color: white;
-}
-
-.cont{
-    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    ;
-    
+    height: 100vh;
 }
 
+.cont {
+    background-color: #164146;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #ece6e6;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ede4e4;
+}
+
+
+input[type="text"], 
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
